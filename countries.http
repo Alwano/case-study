@@ -1,0 +1,27 @@
+### Create a country
+POST http://localhost:8080/api/countries/sync
+Content-Type: application/json
+
+{
+  "name": "Tanzania",
+  "isoCode": "TZ"
+}
+
+### Get all countries
+GET http://localhost:8080/api/countries
+
+### Get one country
+GET http://localhost:8080/api/countries/{{id}}
+
+
+### Update a country
+PUT http://localhost:8080/api/countries/{{id}}
+Content-Type: application/json
+
+{
+  "name": "Republic of Tanzania",
+  "isoCode": "TZ"
+}
+
+### Delete a country
+DELETE http://localhost:8080/api/countries/{{id}}
